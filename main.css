@@ -1,0 +1,73 @@
+#grad {
+  
+  background: #ECE9E6; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(#ECE9E6, #FFFFFF); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(#ECE9E6, #FFFFFF); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#ECE9E6, #FFFFFF); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#ECE9E6, #FFFFFF); /* Standard syntax */
+}
+
+#gradnav {
+  background: #E8CBC0; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, #E8CBC0, #636FA4); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(bottom right, #E8CBC0, #636FA4); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(bottom right, #E8CBC0, #636FA4); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to bottom right, #E8CBC0, #636FA4); /* Standard syntax */
+}
+
+#portfolio-row{
+		width: 80%;
+		margin: auto;
+		margin-left: 13%;     /*to center it on page, redo if necessary*/
+	padding-top: 5px;
+}
+#footer{
+	color: gray;
+        font-family: 'PT Sans', sans-serif;
+		padding-bottom: 30px;
+}
+
+body{
+    #font-family: 'PT Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+}
+
+.contact-section{
+	font-size: 20px;
+}
+
+/* container hover */
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  #left: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.contains:hover .image {
+  opacity: 0.4;
+}
+
+.contains:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #FD8B77;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}

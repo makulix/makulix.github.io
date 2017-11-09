@@ -1,0 +1,402 @@
+<html>
+<head>	
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio | Ron Makhouli</title>
+        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+		<!--<link href="https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light|Rock+Salt" rel="stylesheet">--->
+		<link href="https://fonts.googleapis.com/css?family=Rock+Salt&effect=shadow-multiple" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="social.css">
+        <link rel="stylesheet" href="gallery-clean.css">
+		
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+		<style>/*
+					   Variables
+			  ********************************** */
+			/* *********************************
+			   Some Style Overrides on Bootstrap
+			  ********************************** */
+			 
+			.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
+				color: #fff;
+				background-color: #636FA4;
+			}
+			
+
+			.navbar-inverse {
+			  /*background: rgba(62, 195, 246, 0);*/
+			  background: rgba(232,203,192,0);
+			  border-bottom: none;
+			  border-color: transparent;
+			}
+
+			.navbar-inverse .navbar-toggle {
+			  border: 1px solid #333;
+			  /*border-color: rgba(255, 255, 255, 0.7);*/
+			}
+
+			.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+			  border-color: transparent;
+			}
+			@media (max-width: 767px) {
+			  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+				background: rgba(255, 255, 255, 0.75);
+			  }
+			}
+
+			.navbar-inverse .navbar-nav > li > a {
+			  color: black;
+			}
+
+			.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+			  color: #22F;
+			}
+			li a {
+			  font-size: 20px;
+			  #font-family: 'Shadows Into Light', cursive;
+			  font-family: 'Raleway', sans-serif;
+			  text-decoration: none;
+			  position: relative;
+			  padding: 6px 0;
+			  -webkit-transition: all 0.8s;
+			  transition: all 0.8s;
+			  color: lightblue;
+			}
+			li a:after {
+			  content: '';
+			  width: 0%;
+			  margin-left: 50%;
+			  height: 2px;
+			  bottom: 0;
+			  left: 0;
+			  border-radius: 40%;
+			  position: absolute;
+			  transition: all 0.5s;
+			}
+			li a:hover:after {
+			  background-color: white;
+			  width: 60%;
+			  margin-left: 20%;
+			  box-shadow: 0px 0px 10px white;
+			}
+			li a.active:after {
+			  background-color: white;
+			  width: 60%;
+			  margin-left: 20%;
+			  box-shadow: 0px 0px 10px white;
+			}
+
+			/* *********************************
+					   Toolbar Logo
+			  ********************************** */
+			.small-logo-container {
+			  padding-top: 50px;
+			 padding-left: 10px;
+			  height: 50px;
+			  overflow: hidden;
+			  position: absolute;
+			}
+
+			.small-logo {
+			font-family: 'Rock Salt', cursive;
+			  color: white;
+			  /*font-size: 2.5em;*/
+			  font-size: 34px;
+			  padding-bottom: 2px;
+			}
+
+			/* *********************************
+					   Big Logo
+			  ********************************** */
+			.big-logo-row {
+			  #background: #DCDCDC;
+			  background: #E8CBC0; /* For browsers that do not support gradients */
+			  background: -webkit-linear-gradient(left top, #E8CBC0, #636FA4); /* For Safari 5.1 to 6.0 */
+			  background: -o-linear-gradient(bottom right, #E8CBC0, #636FA4); /* For Opera 11.1 to 12.0 */
+			  background: -moz-linear-gradient(bottom right, #E8CBC0, #636FA4); /* For Firefox 3.6 to 15 */
+			  background: linear-gradient(to bottom right, #E8CBC0, #636FA4); /* Standard syntax */
+			}
+			.big-logo-row .big-logo-container {
+			  padding-top: 50px;
+			  padding-bottom: 25px;
+			}
+			.big-logo-row #h1 {
+			  font-size: 4em;
+			  margin: 0;
+			  padding: 0 0 15px 0;
+				font-family: 'Rock Salt', cursive;
+
+			}
+			
+			@media (min-width: 400px) {
+			  .big-logo-row #h1 {
+				font-size: 4.5em;
+			  }
+			}
+			@media (min-width: 440px) {
+			  .big-logo-row #h1 {
+				font-size: 5.5em;
+			  }
+			}
+			@media (min-width: 500px) {
+			  .big-logo-row #h1 {
+				font-size: 6.5em;
+			  }
+			}
+			@media (min-width: 630px) {
+			  .big-logo-row #h1 {
+				font-size: 7.5em;
+			  }
+			}
+			@media (min-width: 768px) {
+			  .big-logo-row #h1 {
+				font-size: 9em;
+				padding-bottom: 30px;
+				margin-left: 20px;
+			  }
+			}
+			@media (min-width: 1200px) {
+			  .big-logo-row #h1 {
+				font-size: 6em;
+				margin-left: -150px;
+			  }
+			  .small-logo-container{
+				margin-left: -150px;
+			  }
+			}
+		</style>   
+
+</head>
+
+<body id="grad">
+	   <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="small-logo-container">
+            <a class="small-logo" href="#">Ron Makhouli</a>
+          </div>
+        </div>
+        <div class="navbar-collapse collapse">
+          
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="#">portfolio</a></li>
+            <li><a href="file:///C:/Users/Gene/Desktop/RonsPortfolio/about.html">about me</a></li>
+            <li><a href="file:///C:/Users/Gene/Desktop/RonsPortfolio/contact.html">contact me</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <div class="container-fluid big-logo-row">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 big-logo-container">
+            <span id="h1" class="big-logo"><strong class=" font-effect-shadow-multiple">Ron Makhouli</strong></span>
+            <!---<span class="hidden-xs"><img width="100" height="100" class="pull-right img-responsive" src="magnet.png" alt=""/></span>--->
+          </div><!--/.col-xs-12 -->
+        </div><!--/.row -->
+      </div><!--/.container -->
+    </div><!--/.container-fluid -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8">
+		<br/>
+          <!---<p style="font-size:20px">Dolor sit amet, consectetur adipisicing elit. Id maxime repellat repellendus porro voluptas laudantium similique eveniet quis perferendis beatae commodi sunt ullam provident dolorum doloribus esse accusamus dolores. Corrupti.</p>--->
+        </div><!--/.col-xs-12 -->
+      </div><!--/.row -->
+    </div><!--/.container -->
+
+ 
+
+    
+    <div class="gallery-container">
+
+    <!--<p class="page-description text-center">Clean Layout With Minimal Styles</p>-->
+    
+    <div class="tz-gallery">
+
+        <div class="row">
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="C:/Users/Gene\Desktop/RonsPortfolio/images/after.png">
+                        <img width="500" height="400" src="C:/Users/Gene\Desktop/RonsPortfolio/images/after.png" alt="Park">
+                    </a>
+                    <div class="caption">
+                        <!--<h3>After</h3>--->
+                        <span style="font-size: 20px; font-weight: bolder;">AFTER-</span>
+                        <span style="font-size: 20px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="C:/Users/Gene\Desktop/RonsPortfolio//images/survival-night.png">
+                        <img width="500" height="400" src="C:/Users/Gene\Desktop/RonsPortfolio//images/survival-night.png" alt="Bridge">
+                    </a>
+                    <div class="caption">
+                        <span style="font-size: 20px; font-weight: bolder;">SURVIVAL NIGHT-</span>
+                        <span style="font-size: 20px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="C:/Users/Gene\Desktop/RonsPortfolio//images/cemented.png">
+                        <img width="500" height="400" src="C:/Users/Gene\Desktop/RonsPortfolio//images/cemented.png" alt="Tuneel">
+                    </a>
+                    <div class="caption">
+                        <span style="font-size: 20px; font-weight: bolder;">CEMENTED-</span>
+                        <span style="font-size: 20px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="C:/Users/Gene\Desktop/RonsPortfolio//images/pc-cat.png">
+                        <img width="500" height="400" src="C:/Users/Gene\Desktop/RonsPortfolio//images/pc-cat.png" alt="Coast">
+                    </a>
+                    <div class="caption">
+                        <span style="font-size: 20px; font-weight: bolder;">PC Cat-</span>
+                        <span style="font-size: 20px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="C:/Users/Gene\Desktop/RonsPortfolio//images/rails.jpg">
+                        <img width="500" height="400" src="C:/Users/Gene\Desktop/RonsPortfolio//images/rails.jpg" alt="Rails">
+                    </a>
+                    <div class="caption">
+                        <span style="font-size: 20px; font-weight: bolder;">CREEP AWAY-</span>
+                        <span style="font-size: 20px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <a class="lightbox" href="C:/Users/Gene\Desktop/RonsPortfolio//images/traffic.jpg">
+                        <img width="500" height="400" src="C:/Users/Gene\Desktop/RonsPortfolio//images/traffic.jpg" alt="Traffic">
+                    </a>
+                    <div class="caption">
+                        <span style="font-size: 20px; font-weight: bolder;">CREEP AWAY-</span>
+                        <span style="font-size: 20px;">
+                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+			
+        			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+			<div id="footer" class="container-fluid">
+				<span style="float: left;">&copy; 2017 Ron Makhouli</span>
+					<div class="sicon col-xs-6 col-sm-4 pull-right">
+
+						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+							<div class="icon-circle">
+								<a href="#" class="ifacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
+							</div>
+						</div>
+				 
+						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+							<div class="icon-circle">
+								<a href="#" class="itwittter" title="Twitter"><i class="fa fa-twitter"></i></a>
+							</div>
+						</div>
+				  
+						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+							<div class="icon-circle">
+								<a href="#" class="igoogle" title="Google+"><i class="fa fa-google-plus"></i></a>
+							</div>
+						</div>
+				  
+						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
+							<div class="icon-circle">
+								<a href="#" class="iLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+							</div>
+						</div>
+
+					</div>				
+			</div>
+			<section>
+				<p class="text-center"><a  style="color:#636FA4; text-decoration: none;" href="https://www.geneglee.com">Designed by Gene Lee</a></p>
+			</section>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
+<script>
+    baguetteBox.run('.tz-gallery');
+</script>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+								var navbarHeight = $('.navbar').height(); 
+
+$(window).scroll(function() {
+  /*var navbarColor = "62,195,246";//color attr for rgba*/
+  var navbarColor = "232,203,192";
+
+
+  var smallLogoHeight = $('.small-logo').height();
+  var bigLogoHeight = $('.big-logo').height();
+  
+  
+  var smallLogoEndPos = 0;
+  var smallSpeed = (smallLogoHeight / bigLogoHeight);
+  
+  var ySmall = ($(window).scrollTop() * smallSpeed); 
+  
+  var smallPadding = navbarHeight - ySmall;
+  if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
+  if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
+  if (smallPadding < 0) { smallPadding = 0; }
+  
+  $('.small-logo-container ').css({ "padding-top": smallPadding});
+  
+  var navOpacity = ySmall / smallLogoHeight; 
+  if  (navOpacity > 1) { navOpacity = 1; }
+  if (navOpacity < 0 ) { navOpacity = 0; }
+  var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
+  $('.navbar').css({"background-color": navBackColor});
+  
+  var shadowOpacity = navOpacity * 0.4;
+  if ( ySmall > 1) {
+    $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
+  } else {
+    $('.navbar').css({"box-shadow": "none"});
+  }
+  
+  
+  
+});</script>
+</body>
+
+
+
+</html>
