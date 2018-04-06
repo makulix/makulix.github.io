@@ -66,6 +66,24 @@
     background-color: transparent !important;
 }
 
+.tz-gallery .lightbox:hover:after,
+.tz-gallery .lightbox:hover:before {
+    opacity: 1;
+}
+
+.tz-gallery .lightbox:after {
+    position: absolute;
+    top: 0;
+    width: 500;
+    height: 400;
+    opacity: 0;
+    #background-color: rgba(46, 132, 206, 0.7);
+    background-color: rgba(224, 224, 235, 0.6);
+    content: '';
+    transition: 0.4s;
+	margin-left: 12px;
+
+}
 
 
 
