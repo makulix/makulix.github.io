@@ -78,7 +78,7 @@ body{
 
 #big-logo-id{color: #333;}
 	
-#big-logo-id a:link, a:visited, a:hover, a:active{
+#big-logo-id a, a:link, a:visited, a:hover, a:active{
 	 text-decoration: none; color: inherit; 
 
 }
