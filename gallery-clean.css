@@ -66,7 +66,7 @@
     background-color: transparent !important;
 }
 
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 1920px) {
   .tz-gallery .lightbox:hover:after,
 	.tz-gallery .lightbox:hover:before {
 		opacity: 1;
