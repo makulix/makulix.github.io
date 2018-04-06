@@ -71,3 +71,5 @@ body{
   font-size: 16px;
   padding: 16px 32px;
 }
+
+a:link, a:visited, a:hover, a:active { text-decoration: none; }
