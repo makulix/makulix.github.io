@@ -75,6 +75,8 @@ body{
 .small-logo{
 	a:link, a:visited, a:hover, a:active { text-decoration: none; 	color: white !important; }
 	}
+
+#big-logo-id{color: #333;}
 	
 #big-logo-id a:link, a:visited, a:hover, a:active{
 	 text-decoration: none; color: inherit; 
