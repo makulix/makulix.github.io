@@ -29,7 +29,7 @@
 /* Styles for the gallery */
 
 .tz-gallery {
-    padding: 40px;
+    padding: 10px;
 }
 
 .tz-gallery .thumbnail {
@@ -65,7 +65,7 @@
 .baguetteBox-button {
     background-color: transparent !important;
 }
-
+/*
 @media (min-width: 769px) and (max-width: 1920px) {
   .tz-gallery .lightbox:hover:after,
 	.tz-gallery .lightbox:hover:before {
@@ -87,7 +87,7 @@
 	}	
 
 }
-
+*/
 
 
 
