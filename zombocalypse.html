@@ -2,8 +2,7 @@
 <head>	
 		<meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Ron Makhouli - Game Designer">
-        <title>Portfolio | Ron Makhouli</title>
+        <title>Zombocalypse | Ron Makhouli</title>
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
 		<!--<link href="https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light|Rock+Salt" rel="stylesheet">--->
@@ -17,7 +16,7 @@
 		<style>/*
 					   Variables
 			  ********************************** */
-			/* *********************************
+			/* ********************************* 
 			   Some Style Overrides on Bootstrap
 			  ********************************** */
 			 
@@ -29,7 +28,7 @@
 
 			.navbar-inverse {
 			  /*background: rgba(62, 195, 246, 0);*/
-			  background: rgba(230,92,0,0);
+			  background: rgba(232,203,192,0);
 			  border-bottom: none;
 			  border-color: transparent;
 			}
@@ -103,17 +102,15 @@
 
 			.small-logo {
 			font-family: 'Rock Salt', cursive;
-			  color: white !important;
+			  color: white;
 			  /*font-size: 2.5em;*/
 			  font-size: 34px;
 			  padding-bottom: 2px;
 			}
-			
 
 			/* *********************************
 					   Big Logo
 			  ********************************** */
-
 			.big-logo-row{
 			
 			  background: #e65c00; /* For browsers that do not support gradients */
@@ -122,9 +119,6 @@
 			  background: -moz-linear-gradient(bottom right, #e65c00, #F9D423); /* For Firefox 3.6 to 15 */
 			  background: linear-gradient(to bottom right, #e65c00, #F9D423); /* Standard syntax */
 			}
-			
-			
-			
 			.big-logo-row .big-logo-container {
 			  padding-top: 50px;
 			  padding-bottom: 25px;
@@ -137,20 +131,10 @@
 
 			}
 			
-			@media (min-width: 375px) {
-				.tz-gallery {
-						padding: 2px;
-					}	
-					
-
-			}
-
-			
 			@media (min-width: 400px) {
 			  .big-logo-row #h1 {
 				font-size: 4.5em;
 			  }
-			  
 			}
 			@media (min-width: 440px) {
 			  .big-logo-row #h1 {
@@ -173,11 +157,6 @@
 				padding-bottom: 30px;
 				margin-left: 20px;
 			  }
-			  
-				.tz-gallery {
-						padding: 10px;
-					}	
-
 			}
 			@media (min-width: 1200px) {
 			  .big-logo-row #h1 {
@@ -187,8 +166,26 @@
 			  .small-logo-container{
 				margin-left: -150px;
 			  }
-			  
-			  
+			}
+			
+			img{
+				margin: 16px;
+			}
+			
+			.video-container {
+				position: relative;
+				padding-bottom: 56.25%;
+				padding-top: 35px;
+				height: 0;
+				overflow: hidden;
+			}
+			
+			.video-container iframe {
+				position: absolute;
+				top:0;
+				left: 0;
+				width: 100%;
+				height: 100%;
 			}
 		</style>   
 
@@ -212,7 +209,7 @@
         <div class="navbar-collapse collapse">
           
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">portfolio</a></li>
+            <li><a href="/index.html">portfolio</a></li>
             <li><a href="/about.html">about me</a></li>
             <li><a href="/contact.html">contact me</a></li>
           </ul>
@@ -231,123 +228,39 @@
       </div><!--/.container -->
     </div><!--/.container-fluid -->
 
-
     <div class="container">
       <div class="row">
-		<div class="col-xs-12">
-        <a href="/manvsgod.html"><img id="main-img" alt="Man Vs God" style="margin-top: 24px; margin-bottom: 24px;" class="center-block img-responsive" src="/images/mv2.png" /></a>
-		</div>
+        <div class="">
+		<br/>
+		<h1 class="text-center">Zombocalypse</h1>
+          <p style="font-size:20px">Zombocalypse is a FPS horror game for the PC. In this game, the player must eliminate all the zombies using his machine gun. What makes this game hard is that the player cannot fire his weapon while his flashlight is on. Therefore the player must rely on sound.</p>
+		  
+		  <p style="font-size: 18px;"><i>Engine: Unity</i></p>
+		  <p style="font-size: 18px;"><i>Year: 2017</i></p>
+		  <p style="font-size: 18px;"><i>Role: Programming, Level Design, and Game Design</i></p>
+		  <p style="font-size: 18px;"><i>Team: 5 (Four people worked on sounds only)</i></p>
+		  
+		  <div class="video-container">
+		  <iframe class="center-block" width="854" height="480" src="https://www.youtube.com/embed/irOgwFXNI68" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		  </div>
+		  
+		  <img class="center-block img-responsive" src="/images/zomb/zomb-1.png" alt="" />
+		  
+		  <img class="center-block img-responsive" src="/images/zomb/zomb-2.png" alt="" />
+
+		  <img class="center-block img-responsive" src="/images/zomb/zomb-3.png" alt="" />
+
+		  <img class="center-block img-responsive" src="/images/zomb/zomb-4.png" alt="" />
+
       </div><!--/.row -->
     </div><!--/.container -->
 
- 
 
-    
-    <div class="gallery-container">
-    
-    <div class="tz-gallery">
-
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/after.html">
-                        <img width="500" height="400" src="/images/after.png" alt="After">
-                    </a>
-                    <div class="caption">
-                        <!--<h3>After</h3>--->
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">AFTER</span>
-                        <!--<span style="font-size: 20px;">
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </span>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/zombocalypse.html">
-                        <img width="500" height="400" src="/images/zomb.png" alt="Zombocalypse">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">ZOMBOCALYPSE</span>
-                    </div>
-                </div>
-            </div>
-			<div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/look-away.html">
-                        <img width="500" height="400" src="/images/lookaway.png" alt="Look Away">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">LOOK AWAY</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/cemented.html">
-                        <img width="500" height="400" src="/images/cemented.png" alt="Cemented">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">CEMENTED</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/pc-cat.html">
-                        <img width="500" height="400" src="/images/pc-cat.png" alt="Coast">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">PC CAT</span>
-                    </div>
-                </div>
-            </div>
-			<div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/survival-night.html">
-                        <img width="500" height="400" src="/images/survival-night.png" alt="Survival Night">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">SURVIVAL NIGHT</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</div>
 			
         			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 			<div id="footer" class="container-fluid">
 				<span style="float: left;">&copy; 2017 Ron Makhouli</span>
-					<div class="sicon col-xs-6 col-sm-4 pull-right">
-
-						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-							<div class="icon-circle">
-								<a href="#" class="ifacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-							</div>
-						</div>
-				 
-						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-							<div class="icon-circle">
-								<a href="#" class="itwittter" title="Twitter"><i class="fa fa-twitter"></i></a>
-							</div>
-						</div>
-				  
-						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-							<div class="icon-circle">
-								<a href="#" class="igoogle" title="Google+"><i class="fa fa-google-plus"></i></a>
-							</div>
-						</div>
-				  
-						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-							<div class="icon-circle">
-								<a href="#" class="iLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-							</div>
-						</div>
-
-					</div>				
+			
 			</div>
 			<section>
 				<p class="text-center"><a  style="color:#636FA4; text-decoration: none;" href="https://www.geneglee.com">Designed by Gene Lee</a></p>
@@ -365,6 +278,7 @@
 								var navbarHeight = $('.navbar').height(); 
 
 $(window).scroll(function() {
+    //var navbarColor = "232,203,192";
   var navbarColor="230,92,0";
 
 
