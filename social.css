@@ -10,7 +10,7 @@
 .foot li {
     list-style:none;
 }
-.foot li a {
+.foot li a { 
     position:relative;
     display:block;
     width:75px;
