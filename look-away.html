@@ -5,14 +5,11 @@
         <title>Look Away | Ron Makhouli</title>
         <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<!--<link href="https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light|Rock+Salt" rel="stylesheet">--->
-		<link href="https://fonts.googleapis.com/css?family=Rock+Salt&effect=shadow-multiple" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="social.css">
-        <link rel="stylesheet" href="gallery-clean.css">
-		
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
 		<style>/*
 					   Variables
 			  ********************************** */
@@ -22,13 +19,14 @@
 			 
 			.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
 				color: #fff;
-				background-color: #333;
+				background-color: rgba(248, 202, 77, 0.7);
+				
 			}
 			
 
 			.navbar-inverse {
 			  /*background: rgba(62, 195, 246, 0);*/
-			  background: rgba(232,203,192,0);
+			  background: rgba(230,92,0,0);
 			  border-bottom: none;
 			  border-color: transparent;
 			}
@@ -101,40 +99,55 @@
 			}
 
 			.small-logo {
-			font-family: 'Rock Salt', cursive;
-			  color: white;
+			font-family: 'Marcellus SC', serif;
+			  color: white !important;
 			  /*font-size: 2.5em;*/
 			  font-size: 34px;
 			  padding-bottom: 2px;
 			}
+			
 
 			/* *********************************
 					   Big Logo
 			  ********************************** */
+
 			.big-logo-row{
 			
-			  background: #e65c00; /* For browsers that do not support gradients */
-			  background: -webkit-linear-gradient(left top, #e65c00, #F9D423); /* For Safari 5.1 to 6.0 */
-			  background: -o-linear-gradient(bottom right, #e65c00, #F9D423); /* For Opera 11.1 to 12.0 */
-			  background: -moz-linear-gradient(bottom right, #e65c00, #F9D423); /* For Firefox 3.6 to 15 */
-			  background: linear-gradient(to bottom right, #e65c00, #F9D423); /* Standard syntax */
+			  background: #8e9eab; /* For browsers that do not support gradients */
+			  background: -webkit-linear-gradient(left top, #8e9eab, #eef2f3); /* For Safari 5.1 to 6.0 */
+			  background: -o-linear-gradient(bottom right, #8e9eab, #eef2f3); /* For Opera 11.1 to 12.0 */
+			  background: -moz-linear-gradient(bottom right, #8e9eab, #eef2f3); /* For Firefox 3.6 to 15 */
+			  background: linear-gradient(to bottom right, #8e9eab, #eef2f3); /* Standard syntax */
 			}
+			
 			.big-logo-row .big-logo-container {
 			  padding-top: 50px;
 			  padding-bottom: 25px;
 			}
 			.big-logo-row #h1 {
 			  font-size: 4em;
+			  color: rgb(248, 202, 77);
 			  margin: 0;
 			  padding: 0 0 15px 0;
-				font-family: 'Rock Salt', cursive;
+			  font-family: 'Marcellus SC', serif;
 
 			}
+			
+			@media (min-width: 375px) {
+				.tz-gallery {
+						padding: 2px;
+					}	
+					
+
+			}
+
 			
 			@media (min-width: 400px) {
 			  .big-logo-row #h1 {
 				font-size: 4.5em;
 			  }
+			  
+			  
 			}
 			@media (min-width: 440px) {
 			  .big-logo-row #h1 {
@@ -157,6 +170,11 @@
 				padding-bottom: 30px;
 				margin-left: 20px;
 			  }
+			  
+				.tz-gallery {
+						padding: 10px;
+					}	
+
 			}
 			@media (min-width: 1200px) {
 			  .big-logo-row #h1 {
@@ -166,11 +184,15 @@
 			  .small-logo-container{
 				margin-left: -150px;
 			  }
+			  
+			  
 			}
 			
-			img{
-				margin: 16px;
-			}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
 		</style>   
 
 </head>
@@ -193,8 +215,7 @@
         <div class="navbar-collapse collapse">
           
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="/index.html">portfolio</a></li>
-            <li><a href="/about.html">about me</a></li>
+            <li class="active"><a href="#">portfolio</a></li>
             <li><a href="/contact.html">contact me</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -205,7 +226,8 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 big-logo-container">
-            <span id="h1" class="big-logo"><a style="color: #333;" href="/"><strong class=" font-effect-shadow-multiple">Ron Makhouli</strong></a></span>
+            <span id="h1" class="big-logo"><a style="text-shadow: 0px 0px 4px #222;" href="/">Ron Makhouli</a></span>
+			<span class="hidden-xs hidden-sm" style="font-size: 24px; margin-top: 48px; margin-left: 30px; ">GAME DESIGNER</span>
             <!---<span class="hidden-xs"><img width="100" height="100" class="pull-right img-responsive" src="magnet.png" alt=""/></span>--->
           </div><!--/.col-xs-12 -->
         </div><!--/.row -->
@@ -214,7 +236,6 @@
 
     <div class="container">
       <div class="row">
-        <div class="">
 		<br/>
 		<h1 class="text-center">Look Away</h1>
           <p style="font-size:20px">Look Away is a horror VR experience for Google Cardboard, where the player's goal is to watch everything happening around him or her without looking away.</p>
@@ -232,31 +253,22 @@
 
       </div><!--/.row -->
     </div><!--/.container -->
+	    <div class="clearfix"></div>
 
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+			<span id="copy" style="float: left; margin-left: 32px;">&copy; 2017 Ron Makhouli</span>
 
-			
-        			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-			<div id="footer" class="container-fluid">
-				<span style="float: left;">&copy; 2017 Ron Makhouli</span>			
-			</div>
 			<section>
 				<p class="text-center"><a  style="color:#636FA4; text-decoration: none;" href="https://www.geneglee.com">Designed by Gene Lee</a></p>
 			</section>
     
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
-</script>
-
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-								var navbarHeight = $('.navbar').height(); 
+var navbarHeight = $('.navbar').height(); 
 
 $(window).scroll(function() {
-    //var navbarColor = "232,203,192";
-  var navbarColor="230,92,0";
+  var navbarColor="142,158,171";
 
 
   var smallLogoHeight = $('.small-logo').height();
@@ -290,8 +302,30 @@ $(window).scroll(function() {
   
   
   
-});</script>
+});
+
+
+
+$(document).ready(function(){
+
+	if ($(window).width() >= 2560) {
+		$(".big-logo").css("margin-left", "-450px");
+		$(".navbar-right").css("margin-right", "-450px");
+	}
+
+	AOS.init({ disable: 'mobile' });
+	
+
+});
+
+/* For mobile support, delet the 'mobile' */
+
+
+
+
+</script>
 </body>
+
 
 
 

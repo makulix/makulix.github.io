@@ -4,16 +4,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Ron Makhouli - Game Designer">
         <title>Portfolio | Ron Makhouli</title>
-        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<!--<link href="https://fonts.googleapis.com/css?family=Raleway|Shadows+Into+Light|Rock+Salt" rel="stylesheet">--->
-		<link href="https://fonts.googleapis.com/css?family=Rock+Salt&effect=shadow-multiple" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="social.css">
-        <link rel="stylesheet" href="gallery-clean.css">
-		
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.css">
+
 		<style>/*
 					   Variables
 			  ********************************** */
@@ -23,7 +22,8 @@
 			 
 			.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
 				color: #fff;
-				background-color: #333;
+				background-color: rgba(248, 202, 77, 0.7);
+				
 			}
 			
 
@@ -102,7 +102,7 @@
 			}
 
 			.small-logo {
-			font-family: 'Rock Salt', cursive;
+			font-family: 'Marcellus SC', serif;
 			  color: white !important;
 			  /*font-size: 2.5em;*/
 			  font-size: 34px;
@@ -116,24 +116,23 @@
 
 			.big-logo-row{
 			
-			  background: #e65c00; /* For browsers that do not support gradients */
-			  background: -webkit-linear-gradient(left top, #e65c00, #F9D423); /* For Safari 5.1 to 6.0 */
-			  background: -o-linear-gradient(bottom right, #e65c00, #F9D423); /* For Opera 11.1 to 12.0 */
-			  background: -moz-linear-gradient(bottom right, #e65c00, #F9D423); /* For Firefox 3.6 to 15 */
-			  background: linear-gradient(to bottom right, #e65c00, #F9D423); /* Standard syntax */
+			  background: #8e9eab; /* For browsers that do not support gradients */
+			  background: -webkit-linear-gradient(left top, #8e9eab, #eef2f3); /* For Safari 5.1 to 6.0 */
+			  background: -o-linear-gradient(bottom right, #8e9eab, #eef2f3); /* For Opera 11.1 to 12.0 */
+			  background: -moz-linear-gradient(bottom right, #8e9eab, #eef2f3); /* For Firefox 3.6 to 15 */
+			  background: linear-gradient(to bottom right, #8e9eab, #eef2f3); /* Standard syntax */
 			}
-			
-			
-			
+
 			.big-logo-row .big-logo-container {
 			  padding-top: 50px;
 			  padding-bottom: 25px;
 			}
 			.big-logo-row #h1 {
 			  font-size: 4em;
+			  color: rgb(248, 202, 77);
 			  margin: 0;
 			  padding: 0 0 15px 0;
-				font-family: 'Rock Salt', cursive;
+			  font-family: 'Marcellus SC', serif;
 
 			}
 			
@@ -150,6 +149,7 @@
 			  .big-logo-row #h1 {
 				font-size: 4.5em;
 			  }
+			  
 			  
 			}
 			@media (min-width: 440px) {
@@ -190,6 +190,85 @@
 			  
 			  
 			}
+			
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Header settings */
+header {
+  height:65vh; /* you can change that height to 100%, please get sure youre Header is ready */
+  background-attachment:fixed;
+  background-size:cover;
+  background-position:left;
+  background-repeat:no-repeat;
+  background-image:linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255, 1)), url("/images/mvg-cover.png");
+  background-blend-mode:screen; /* you can remove that, if you do that delet the "linear-gradient(to right, black 0%, white 100%)," */
+}
+
+@media (max-width:767px){
+  header {
+  background-attachment:inherit;
+}
+}
+
+header .row
+{
+    margin-top:40vh; /* Handle the row */
+}
+
+@media (max-width:767px){
+    header .row
+{
+    margin-top:30vh; /* Handle the row on mobile */
+}
+}
+
+header h1
+{
+    /*font-family: 'Arbutus', cursive;*/
+	font-family: 'Cinzel', serif;
+    text-align:center;
+    font-size:5em;
+    color:#F8CA4D;
+    text-shadow:0px 0px 4px #222;
+}
+
+@media (max-width:767px){
+    header h1
+{
+    font-size:41px;
+}
+}
+
+header p
+{
+    text-align:center;
+    font-size:21px;
+}
+
+header .btn-link
+{
+    border:1px solid #eee;
+    margin-top:20px;
+    font-size:21px;
+    letter-spacing:1px;
+    color:#eee;
+    text-shadow:0px 0px 1px #222;
+    box-shadow:0px 0px 1px #000;
+}
+
+header .btn-link:hover
+{
+    text-decoration:none;
+    color:#f8ca4d;
+    border:1px solid #f8ca4d;
+    transition:all 0.7s;
+    text-shadow:0px 0px 3px #000;
+}
+  	
 		</style>   
 
 </head>
@@ -213,7 +292,6 @@
           
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="#">portfolio</a></li>
-            <li><a href="/about.html">about me</a></li>
             <li><a href="/contact.html">contact me</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -224,148 +302,126 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 big-logo-container">
-            <span id="h1" class="big-logo"><a style="color: #333;" href="/"><strong class=" font-effect-shadow-multiple">Ron Makhouli</strong></a></span>
+            <span id="h1" class="big-logo"><a style="text-shadow: 0px 0px 4px #222;" href="/">Ron Makhouli</a></span>
+			<span class="hidden-xs hidden-sm" style="font-size: 24px; margin-top: 48px; margin-left: 30px; ">GAME DESIGNER</span>
             <!---<span class="hidden-xs"><img width="100" height="100" class="pull-right img-responsive" src="magnet.png" alt=""/></span>--->
           </div><!--/.col-xs-12 -->
         </div><!--/.row -->
       </div><!--/.container -->
     </div><!--/.container-fluid -->
 
-
-    <div class="container">
-      <div class="row">
-		<div class="col-xs-12">
-        <a href="/manvsgod.html"><img id="main-img" alt="Man Vs God" style="margin-top: 24px; margin-bottom: 24px;" class="center-block img-responsive" src="/images/mv2.png" /></a>
-		</div>
-      </div><!--/.row -->
-    </div><!--/.container -->
-
+	
+	
+	    <header> 
  
-
-    
-    <div class="gallery-container">
-    
-    <div class="tz-gallery">
-
-        <div class="row">
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/after.html">
-                        <img width="500" height="400" src="/images/after.png" alt="After">
-                    </a>
-                    <div class="caption">
-                        <!--<h3>After</h3>--->
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">AFTER</span>
-                        <!--<span style="font-size: 20px;">
-                             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </span>-->
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12" data-aos="fade-left" data-aos-duration="2600" data-aos-once="true" >
+                    <h1>Man vs God</h1>
+                    <p style="color: #eee; text-shadow:0px 0px 3px #000;">One Man, One God, and a Great Battle</p>
                 </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/zombocalypse.html">
-                        <img width="500" height="400" src="/images/zomb.png" alt="Zombocalypse">
+                <div class="col-md-12" data-aos="fade-right" data-aos-duration="2600" data-aos-once="true" ><center>
+                    <a class="btn btn-link" href="/manvsgod.html">
+                        Watch Now
                     </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">ZOMBOCALYPSE</span>
-                    </div>
-                </div>
-            </div>
-			<div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/look-away.html">
-                        <img width="500" height="400" src="/images/lookaway.png" alt="Look Away">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">LOOK AWAY</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/cemented.html">
-                        <img width="500" height="400" src="/images/cemented.png" alt="Cemented">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">CEMENTED</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/pc-cat.html">
-                        <img width="500" height="400" src="/images/pc-cat.png" alt="Coast">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">PC CAT</span>
-                    </div>
-                </div>
-            </div>
-			<div class="col-sm-6 col-md-4">
-                <div class="thumbnail">
-                    <a class="lightbox" href="/survival-night.html">
-                        <img width="500" height="400" src="/images/survival-night.png" alt="Survival Night">
-                    </a>
-                    <div class="caption">
-                        <span style="font-size: 20px; font-weight: bolder; text-align: center;">SURVIVAL NIGHT</span>
-                    </div>
+                    </center>
                 </div>
             </div>
         </div>
+        
+		</header>
 
-    </div>
+
+	  <!--- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">--->
+
+<div class="container-fluid" style="margin-bottom: 128px;">
+<div class="title-arch">Hello, I am Ron Makhouli and I am a level designer.
+<p>I graduated from George Mason University with a bachelor’s degree in computer game design.</p>
+<p> Throughout my academic years, many of my games were put on the dean’s list as the best games of the semester.</p>
+<p style="padding-top: 48px;">my portfolio</p>
 
 </div>
+	<div id="projects">
+		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project wow animated animated4 fadeInLeft">
+			<div class="project-hover">
+				<h2>AFTER</h2>
+				
+				<hr />
+				<p>Horror - PC</p>
+				<a href="/after.html">See Project</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-2 wow animated animated3 fadeInLeft">
+			<div class="project-hover">
+				<h2>ZOMBOCALYPSE</h2>
+				<hr />
+				<p>Horror, FPS - PC</p>
+				<a href="/zombocalypse.html">See Project</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-3 wow animated animated2 fadeInLeft">
+			<div class="project-hover">
+				<h2>LOOK AWAY</h2>
+				<hr />
+				<p>Horror - VR</p>            
+				<a href="/look-away.html">See Project</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-4 wow animated fadeInLeft">
+			<div class="project-hover">
+				<h2>CEMENTED</h2>
+				<hr />
+				<p>Strategy - PC</p>            
+				<a href="/cemented.html">See Project</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-5 wow animated fadeInLeft">
+			<div class="project-hover">
+				<h2>PC CAT</h2>
+				<hr />
+				<p>Simulation - PC</p>            
+				<a href="/pc-cat.html">See Project</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-6 wow animated fadeInLeft">
+			<div class="project-hover">
+				<h2>SURVIVAL NIGHT</h2>
+				<hr />
+				<p>Action, FPS - PC</p>            
+				<a href="/survival-night.html">See Project</a>
+			</div>
+		</div>
+		<div class="clearfix"></div>
+	</div>
+</div>
+
 			
-        			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-			<div id="footer" class="container-fluid">
-				<span style="float: left;">&copy; 2017 Ron Makhouli</span>
-					<div class="sicon col-xs-6 col-sm-4 pull-right">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+			<span id="copy" style="float: left; margin-left: 32px;">&copy; 2017 Ron Makhouli</span>
 
-						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-							<div class="icon-circle">
-								<a href="#" class="ifacebook" title="Facebook"><i class="fa fa-facebook"></i></a>
-							</div>
-						</div>
-				 
-						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-							<div class="icon-circle">
-								<a href="#" class="itwittter" title="Twitter"><i class="fa fa-twitter"></i></a>
-							</div>
-						</div>
-				  
-						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-							<div class="icon-circle">
-								<a href="#" class="igoogle" title="Google+"><i class="fa fa-google-plus"></i></a>
-							</div>
-						</div>
-				  
-						<div class="col-lg-1 col-md-1 col-sm-2 col-xs-3 text-center">
-							<div class="icon-circle">
-								<a href="#" class="iLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-							</div>
-						</div>
+			<div id="footer" class="container" >
 
-					</div>				
+					<ul class="foot col-xs-12 col-sm-offset-2 col-sm-10 col-md-offset-3 col-md-9 col-lg-offset-6 col-lg-6" style="float: right;">
+						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					</ul>		
 			</div>
 			<section>
 				<p class="text-center"><a  style="color:#636FA4; text-decoration: none;" href="https://www.geneglee.com">Designed by Gene Lee</a></p>
 			</section>
     
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.8.1/baguetteBox.min.js"></script>
-<script>
-    baguetteBox.run('.tz-gallery');
-</script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script> <!-- Important for animation -->
 
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-								var navbarHeight = $('.navbar').height(); 
+var navbarHeight = $('.navbar').height(); 
 
 $(window).scroll(function() {
-  var navbarColor="230,92,0";
+  var navbarColor="142,158,171";
 
 
   var smallLogoHeight = $('.small-logo').height();
@@ -399,9 +455,35 @@ $(window).scroll(function() {
   
   
   
-});</script>
-</body>
+});
 
+
+
+$(document).ready(function(){
+
+	if ($(window).width() == 1440) {
+	    $("#projects").addClass("col-md-offset-2");
+	}
+
+	if ($(window).width() >1440) {
+	    $("#projects").addClass("col-md-offset-1");
+	}
+	
+	if ($(window).width() >= 2560) {
+	    $(".big-logo").css("margin-left", "-450px");
+		$(".navbar-right").css("margin-right", "-450px");
+	}
+
+	AOS.init({ disable: 'mobile' });
+});
+
+/* For mobile support, delet the 'mobile' */
+
+
+
+
+</script>
+</body>
 
 
 </html>
