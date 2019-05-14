@@ -1,21 +1,28 @@
-html, body {
-    max-width: 100%;
-    overflow-x: hidden;
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 #grad {
-  
   /*background: #ECE9E6; /* For browsers that do not support gradients */
-	/*background: -webkit-linear-gradient(#FFEEDC, #ECE9E6); /* For Safari 5.1 to 6.0 */
-	/*background: -o-linear-gradient(#FFEEDC, #ECE9E6); /* For Opera 11.1 to 12.0 */
-	/*background: -moz-linear-gradient(#FFEEDC #ECE9E6); /* For Firefox 3.6 to 15 */
-	/*background: linear-gradient(#FFEEDC, #ECE9E6); /* Standard syntax */
-	
-	  background: #edf7ff; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient(#edf7ff, #eef2f3); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(#edf7ff, #eef2f3); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(#edf7ff, #eef2f3); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(#edf7ff, #eef2f3); /* Standard syntax */
+  /*background: -webkit-linear-gradient(#FFEEDC, #ECE9E6); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(#FFEEDC, #ECE9E6); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(#FFEEDC #ECE9E6); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(#FFEEDC, #ECE9E6); /* Standard syntax */
+
+  background: #edf7ff; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    #edf7ff,
+    #eef2f3
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#edf7ff, #eef2f3); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    #edf7ff,
+    #eef2f3
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#edf7ff, #eef2f3); /* Standard syntax */
 }
 
 #gradnav {
@@ -24,49 +31,74 @@ html, body {
   /*background: -o-linear-gradient(bottom right, #E8CBC0, #636FA4); /* For Opera 11.1 to 12.0 */
   /*background: -moz-linear-gradient(bottom right, #E8CBC0, #636FA4); /* For Firefox 3.6 to 15 */
   /*background: linear-gradient(to bottom right, #E8CBC0, #636FA4); /* Standard syntax */
-  
-    background: #e65c00; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #e65c00, #F9D423); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #e65c00, #F9D423); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #e65c00, #F9D423); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #e65c00, #F9D423); /* Standard syntax */
-  
-   
-}
-
-
-.big-logo-row{
 
   background: #e65c00; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(left top, #e65c00, #F9D423); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(bottom right, #e65c00, #F9D423); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(bottom right, #e65c00, #F9D423); /* For Firefox 3.6 to 15 */
-  background: linear-gradient(to bottom right, #e65c00, #F9D423); /* Standard syntax */
-
-	
+  background: -webkit-linear-gradient(
+    left top,
+    #e65c00,
+    #f9d423
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    bottom right,
+    #e65c00,
+    #f9d423
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    bottom right,
+    #e65c00,
+    #f9d423
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    to bottom right,
+    #e65c00,
+    #f9d423
+  ); /* Standard syntax */
 }
 
-
-#portfolio-row{
-		width: 80%;
-		margin: auto;
-		margin-left: 13%;     /*to center it on page, redo if necessary*/
-	padding-top: 5px;
+.big-logo-row {
+  background: #e65c00; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(
+    left top,
+    #e65c00,
+    #f9d423
+  ); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(
+    bottom right,
+    #e65c00,
+    #f9d423
+  ); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(
+    bottom right,
+    #e65c00,
+    #f9d423
+  ); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(
+    to bottom right,
+    #e65c00,
+    #f9d423
+  ); /* Standard syntax */
 }
-#footer{
-	color: gray;
-        font-family: 'PT Sans', sans-serif;
-		padding-bottom: 30px;
-		margin-top: 16px;
+
+#portfolio-row {
+  width: 80%;
+  margin: auto;
+  margin-left: 13%; /*to center it on page, redo if necessary*/
+  padding-top: 5px;
+}
+#footer {
+  color: gray;
+  font-family: "PT Sans", sans-serif;
+  padding-bottom: 30px;
+  margin-top: 16px;
 }
 
-body{
-    #font-family: 'PT Sans', sans-serif;
-	font-family: 'Raleway', sans-serif;
+body {
+  #font-family: "PT Sans", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
-.contact-section{
-	font-size: 20px;
+.contact-section {
+  font-size: 20px;
 }
 
 /* container hover */
@@ -76,18 +108,18 @@ body{
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
 }
 .middle {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
   #left: 50%;
   left: 30%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
 }
 
 .contains:hover .image {
@@ -99,124 +131,135 @@ body{
 }
 
 .text {
-  background-color: #FD8B77;
+  background-color: #fd8b77;
   color: white;
   font-size: 16px;
   padding: 16px 32px;
 }
 
-.small-logo{
-	a:link, a:visited, a:hover, a:active { text-decoration: none; 	color: white !important; }
-	}
-
-#big-logo-id a{color: #333;}
-	
-#big-logo-id a, a:link, a:visited, a:hover, a:active{
-	 text-decoration: none; color: inherit; 
-
+.small-logo {
+  a:link,
+  a:visited,
+  a:hover,
+  a:active {
+    text-decoration: none;
+    color: white !important;
+  }
 }
 
+#big-logo-id a {
+  color: #333;
+}
+
+#big-logo-id a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
 
 /**NEW GRID------------------------------------*/
-	.title-arch {
-		text-align: center;
-		margin: 50px 0;
-		font-size: 22px;
-		letter-spacing: 2px;
-		text-transform: uppercase;
-	}
+.title-arch {
+  text-align: center;
+  margin: 50px 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 .project {
-	/*width: 100%;*/
-	height: 400px;
-	background-image: url("/images/after.png");
-	background-size: cover;
-	background-position: center;
-	padding: 0 !important;
-	float:left;
+  /*width: 100%;*/
+  /* height: 400px; */
+  height: 500px;
+  background-image: url("/images/after.png");
+  background-size: cover;
+  background-position: center;
+  padding: 0 !important;
+  float: left;
 }
 
 .project-2 {
-	background-image: url("/images/zomb.png");
+  background-image: url("/images/zomb.png");
 }
 
 .project-3 {
-	background-image: url("/images/lookaway.png");
+  background-image: url("/images/lookaway.png");
 }
 
 .project-4 {
-	background-image: url("/images/cemented.png");
+  background-image: url("/images/cemented.png");
 }
 
 .project-5 {
-	background-image: url("/images/pc-cat.png");
+  background-image: url("/images/pc-cat.png");
 }
 
 .project-6 {
-	background-image: url("/images/survival-night.png");
+  background-image: url("/images/survival-night.png");
 }
 
 .project-hover {
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	opacity: 0;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	/*background-color: rgba(186, 232, 2, 0.7);*/
-	background-color: rgba(248, 202, 77, 0.7);
-	padding: 40% 30px !important;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /*background-color: rgba(186, 232, 2, 0.7);*/
+  background-color: rgba(248, 202, 77, 0.7);
+  padding: 40% 30px !important;
 }
 
 .project-hover hr {
-	height: 30px;
-	width: 0;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	transition: all 0.5s ease;
-	background-color: rgba(255, 255, 255, 1);
-	border: 0;
+  height: 30px;
+  width: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  background-color: rgba(255, 255, 255, 1);
+  border: 0;
 }
 
 .project-hover a {
-	color: rgba(255, 255, 255, 1);
-	padding: 2px 22px;
-	line-height: 40px;
-	border: 2px solid rgba(255, 255, 255, 1);
-	-webkit-transition: all 0.5s ease-in-out;
-	-moz-transition: all 0.5s ease-in-out;
-	-o-transition: all 0.5s ease-in-out;
-	transition: all 0.5s ease-in-out;
+  color: rgba(255, 255, 255, 1);
+  padding: 2px 22px;
+  line-height: 40px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project-hover a:hover {
-	border-color: rgba(51, 51, 51, 1);
-	color: rgba(51, 51, 51, 1);
-	background-color: #FFF;
+  border-color: rgba(51, 51, 51, 1);
+  color: rgba(51, 51, 51, 1);
+  background-color: #fff;
 }
 
 .project:hover .project-hover {
-	opacity: 1;
+  opacity: 1;
 }
 
 .project:hover .project-hover hr {
-	width: 100%;
-	height: 5px;
+  width: 100%;
+  height: 5px;
 }
 
 @media (max-width: 420px) {
-.project {
-	width: 100%;
-}
+  .project {
+    width: 100%;
+  }
 }
 
-@media (min-width: 1440px){
-	.project{
-		width: 500px;
-		height: 400px;
-		margin: 5px;
-		
-	}
+@media (min-width: 1440px) {
+  .project {
+    width: 500px;
+    height: 400px;
+    /* margin: 5px; */
+  }
 }
