@@ -1,488 +1,577 @@
 <html>
-<head>	
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="Ron Makhouli - Game Designer">
-        <title>Portfolio | Ron Makhouli</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"> 
-		<link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="social.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Ron Makhouli - Game Designer" />
+    <title>Portfolio | Ron Makhouli</title>
 
-		<style>/*
-					   Variables
-			  ********************************** */
-			/* *********************************
-			   Some Style Overrides on Bootstrap
-			  ********************************** */
-			 
-			.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-				color: #fff;
-				background-color: rgba(248, 202, 77, 0.7);
-				
-			}
-			
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Marcellus+SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
 
-			.navbar-inverse {
-			  /*background: rgba(62, 195, 246, 0);*/
-			  background: rgba(230,92,0,0);
-			  border-bottom: none;
-			  border-color: transparent;
-			}
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
 
-			.navbar-inverse .navbar-toggle {
-			  border: 1px solid #333;
-			  /*border-color: rgba(255, 255, 255, 0.7);*/
-			}
+    <!--     <link rel="stylesheet" href="main.css" />
+ -->
 
-			.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-			  border-color: transparent;
-			}
-			@media (max-width: 767px) {
-			  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-				background: rgba(255, 255, 255, 0.75);
-			  }
-			}
+    <style>
+      html,
+      body {
+        max-width: 100%;
+        overflow-x: hidden;
+        height: 100%;
+      }
+      /**NEW GRID------------------------------------*/
+      .title-arch {
+        text-align: center;
+        margin: 50px 0;
+        font-size: 22px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
 
-			.navbar-inverse .navbar-nav > li > a {
-			  color: black;
-			}
+      #projects {
+        overflow: hidden;
+      }
 
-			.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-			  color: #22F;
-			}
-			li a {
-			  font-size: 20px;
-			  #font-family: 'Shadows Into Light', cursive;
-			  font-family: 'Raleway', sans-serif;
-			  text-decoration: none;
-			  position: relative;
-			  padding: 6px 0;
-			  -webkit-transition: all 0.8s;
-			  transition: all 0.8s;
-			  color: lightblue;
-			}
-			li a:after {
-			  content: '';
-			  width: 0%;
-			  margin-left: 50%;
-			  height: 2px;
-			  bottom: 0;
-			  left: 0;
-			  border-radius: 40%;
-			  position: absolute;
-			  transition: all 0.5s;
-			}
-			li a:hover:after {
-			  background-color: white;
-			  width: 60%;
-			  margin-left: 20%;
-			  box-shadow: 0px 0px 10px white;
-			}
-			li a.active:after {
-			  background-color: white;
-			  width: 60%;
-			  margin-left: 20%;
-			  box-shadow: 0px 0px 10px white;
-			}
+      .project {
+        /*width: 100%;*/
+        height: 500px;
+        background-image: url("/images/portfolio-after.png");
+        background-size: cover;
+        background-position: center;
+        padding: 0 !important;
+        float: left;
+      }
 
-			/* *********************************
-					   Toolbar Logo
-			  ********************************** */
-			.small-logo-container {
-			  padding-top: 50px;
-			 padding-left: 10px;
-			  height: 50px;
-			  overflow: hidden;
-			  position: absolute;
-			}
+      .project-2 {
+        background-image: url("/images/portfolio-zomb.png");
+      }
 
-			.small-logo {
-			font-family: 'Marcellus SC', serif;
-			  color: white !important;
-			  /*font-size: 2.5em;*/
-			  font-size: 34px;
-			  padding-bottom: 2px;
-			}
-			
+      .project-3 {
+        background-image: url("/images/lookaway.png");
+      }
 
-			/* *********************************
-					   Big Logo
-			  ********************************** */
+      .project-4 {
+        background-image: url("/images/portfolio-cemented.png");
+      }
 
-			.big-logo-row{
-			
-			  background: #8e9eab; /* For browsers that do not support gradients */
-			  background: -webkit-linear-gradient(left top, #8e9eab, #eef2f3); /* For Safari 5.1 to 6.0 */
-			  background: -o-linear-gradient(bottom right, #8e9eab, #eef2f3); /* For Opera 11.1 to 12.0 */
-			  background: -moz-linear-gradient(bottom right, #8e9eab, #eef2f3); /* For Firefox 3.6 to 15 */
-			  background: linear-gradient(to bottom right, #8e9eab, #eef2f3); /* Standard syntax */
-			}
+      .project-5 {
+        background-image: url("/images/portfolio-pc-cat.png");
+      }
 
-			.big-logo-row .big-logo-container {
-			  padding-top: 50px;
-			  padding-bottom: 25px;
-			}
-			.big-logo-row #h1 {
-			  font-size: 4em;
-			  color: rgb(248, 202, 77);
-			  margin: 0;
-			  padding: 0 0 15px 0;
-			  font-family: 'Marcellus SC', serif;
+      .project-6 {
+        background-image: url("/images/portfolio-survival-night.png");
+      }
 
-			}
-			
-			@media (min-width: 375px) {
-				.tz-gallery {
-						padding: 2px;
-					}	
-					
+      .project-7 {
+        background-image: url("/images/portfolio-mvg.png");
+      }
 
-			}
+      .project-hover {
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        opacity: 0;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        /*background-color: rgba(186, 232, 2, 0.7);*/
+        background-color: rgba(248, 202, 77, 0.7);
+        padding: 40% 30px !important;
+      }
 
-			
-			@media (min-width: 400px) {
-			  .big-logo-row #h1 {
-				font-size: 4.5em;
-			  }
-			  
-			  
-			}
-			@media (min-width: 440px) {
-			  .big-logo-row #h1 {
-				font-size: 5.5em;
-			  }
-			}
-			@media (min-width: 500px) {
-			  .big-logo-row #h1 {
-				font-size: 6.5em;
-			  }
-			}
-			@media (min-width: 630px) {
-			  .big-logo-row #h1 {
-				font-size: 7.5em;
-			  }
-			}
-			@media (min-width: 768px) {
-			  .big-logo-row #h1 {
-				font-size: 9em;
-				padding-bottom: 30px;
-				margin-left: 20px;
-			  }
-			  
-				.tz-gallery {
-						padding: 10px;
-					}	
+      .project-hover hr {
+        height: 30px;
+        width: 0;
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        background-color: rgba(255, 255, 255, 1);
+        border: 0;
+      }
 
-			}
-			@media (min-width: 1200px) {
-			  .big-logo-row #h1 {
-				font-size: 6em;
-				margin-left: -150px;
-			  }
-			  .small-logo-container{
-				margin-left: -150px;
-			  }
-			  
-			  
-			}
-			
+      .project-hover a {
+        color: rgba(255, 255, 255, 1);
+        padding: 2px 22px;
+        line-height: 40px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+      }
 
-body
-{
-    font-family: 'Raleway', sans-serif;
-}
+      .project-hover a:hover {
+        border-color: rgba(51, 51, 51, 1);
+        color: rgba(51, 51, 51, 1);
+        background-color: #fff;
+      }
 
-/* Header settings */
-header {
-  height:65vh; /* you can change that height to 100%, please get sure youre Header is ready */
-  background-attachment:fixed;
-  background-size:cover;
-  background-position:left;
-  background-repeat:no-repeat;
-  background-image:linear-gradient(to top, rgba(255,255,255,0), rgba(255,255,255, 1)), url("/images/mvg-cover.png");
-  background-blend-mode:screen; /* you can remove that, if you do that delet the "linear-gradient(to right, black 0%, white 100%)," */
-}
+      .project:hover .project-hover {
+        opacity: 1;
+      }
 
-@media (max-width:767px){
-  header {
-  background-attachment:inherit;
-}
-}
+      .project:hover .project-hover hr {
+        width: 100%;
+        height: 5px;
+      }
 
-header .row
-{
-    margin-top:30vh; /* Handle the row */
-}
+      @media (max-width: 320px) {
+        .newsocial li {
+          margin: 0 13 !important;
+        }
+      }
 
-@media (max-width:767px){
-    header .row
-{
-    margin-top:30vh; /* Handle the row on mobile */
-}
-}
+      @media (min-width: 321px) and (max-width: 375px) {
+        .newsocial li {
+          margin: 0 22 !important;
+        }
+      }
 
-header h1
-{
-    /*font-family: 'Arbutus', cursive;*/
-	font-family: 'Cinzel', serif;
-    text-align:center;
-    font-size:5em;
-    color:#F8CA4D;
-    text-shadow:0px 0px 4px #222;
-}
+      @media (min-width: 376px) and (max-width: 425px) {
+        .newsocial li {
+          margin: 0 30 !important;
+        }
+      }
 
-@media (max-width:767px){
-    header h1
-{
-    font-size:41px;
-}
-}
+      @media (max-width: 425px) {
+        .project {
+          width: 100%;
+          height: 250px;
+        }
 
-header p
-{
-    text-align:center;
-    font-size:21px;
-}
+        .project-hover {
+          padding: 10% 30px !important;
+        }
 
-header .btn-link
-{
-    border:1px solid #eee;
-    margin-top:20px;
-    font-size:21px;
-    letter-spacing:1px;
-    color:#eee;
-    text-shadow:0px 0px 1px #222;
-    box-shadow:0px 0px 1px #000;
-}
+        h1 {
+          font-size: 3em !important;
+        }
+      }
 
-header .btn-link:hover
-{
-    text-decoration:none;
-    color:#f8ca4d;
-    border:1px solid #f8ca4d;
-    transition:all 0.7s;
-    text-shadow:0px 0px 3px #000;
-}
-  	
-		</style>   
+      @media (min-width: 426px) and (max-width: 769px) {
+        .project {
+          height: 400px;
+        }
+      }
 
-</head>
+      .video-container {
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+      }
 
-<body id="grad">
-	   <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="small-logo-container">
-            <a class="small-logo" href="/">Ron Makhouli</a>
-          </div>
-        </div>
-        <div class="navbar-collapse collapse">
-          
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">portfolio</a></li>
-            <li><a href="/contact.html">contact me</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
+      #myVideo {
+        position: absolute;
+        right: 0;
+        /*bottom: 0;*/
+        /*         width: 100%;
+ */ /*min-height: 100%;*/
+      }
+
+      /* Add some content at the bottom of the video/page */
+      .main-content {
+        position: fixed;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+        color: #f1f1f1;
+        width: 100%;
+        padding: 20px;
+      }
+
+      .scroll-container {
+        position: relative;
+        width: 24px;
+        height: 24px;
+        margin: auto;
+      }
+
+      .chevron {
+        position: absolute;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+      }
+
+      .chevron:first-child {
+        animation: move 3s ease-out 1s infinite;
+      }
+
+      .chevron:nth-child(2) {
+        animation: move 3s ease-out 2s infinite;
+      }
+
+      .chevron:before,
+      .chevron:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 51%;
+        background: #fff;
+      }
+
+      .chevron:before {
+        left: 0;
+        transform: skew(0deg, 30deg);
+      }
+
+      .chevron:after {
+        right: 0;
+        width: 50%;
+        transform: skew(0deg, -30deg);
+      }
+
+      @keyframes move {
+        25% {
+          opacity: 1;
+        }
+        33% {
+          opacity: 1;
+          transform: translateY(30px);
+        }
+        67% {
+          opacity: 1;
+          transform: translateY(40px);
+        }
+        100% {
+          opacity: 0;
+          transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+        }
+      }
+
+      .scroll-text {
+        display: block;
+        margin-top: 75px;
+        margin-left: -30px;
+        font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+        font-size: 12px;
+        color: #fff;
+        text-transform: uppercase;
+        white-space: nowrap;
+        opacity: 0.25;
+        animation: pulse 2s linear alternate infinite;
+      }
+
+      @keyframes pulse {
+        to {
+          opacity: 1;
+        }
+      }
+
+      footer {
+        color: #fff;
+        background-color: #424b54;
+        font-family: "PT Sans", sans-serif;
+        padding-top: 32px;
+        padding-bottom: 30px;
+      }
+      .newsocial {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      .newsocial li {
+        list-style: none;
+        margin: 0 40px;
+      }
+      .newsocial li a {
+        position: relative;
+        width: 60px;
+        height: 60px;
+        display: block;
+        text-align: center;
+        margin: 0 10px;
+        border-radius: 50%;
+        padding: 6px;
+        box-sizing: border-box;
+        text-decoration: none;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+        background: linear-gradient(0deg, #ddd, #fff);
+        transition: 0.5s;
+      }
+      .newsocial li a:hover {
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      }
+      .newsocial li a .fa {
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: linear-gradient(0deg, #fff, #ddd);
+        color: #93a8ac;
+        border-radius: 50%;
+        line-height: calc(60px - 12px);
+        font-size: 32px;
+      }
+
+      .newsocial li:nth-child(1) a:hover .fa {
+        color: #bc2a8d;
+      }
+      .newsocial li:nth-child(2) a:hover .fa {
+        color: #dd4b39;
+      }
+      .newsocial li:nth-child(3) a:hover .fa {
+        color: #007bb6;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Fixed navbar -->
+    <div class="hidden-xs video-container">
+      <video autoplay muted loop id="myVideo">
+        <source src="smoke-video-compressed.mp4" type="video/mp4" />
+      </video>
+      <div style="position: relative; margin-top:30vh;">
+        <h1
+          data-aos="fade-left"
+          data-aos-duration="2600"
+          data-aos-once="true"
+          style="font-family: 'Cinzel', serif;
+        text-align: center;
+        font-size: 5em;
+        color: #f8ca4d;
+        text-shadow: 0px 0px 4px #222;"
+        >
+          Ron Makhouli
+        </h1>
+        <p
+          data-aos="fade-left"
+          data-aos-duration="2800"
+          data-aos-delay="200"
+          data-aos-once="true"
+          style="font-size: 21px; text-align: center;color: #eee; text-shadow:0px 0px 3px #000;"
+        >
+          Game Designer and Developer.
+        </p>
+        <p
+          data-aos="fade-left"
+          data-aos-duration="2800"
+          data-aos-delay="300"
+          data-aos-once="true"
+          style="font-size: 21px; text-align: center;color: #eee; text-shadow:0px 0px 3px #000;"
+        >
+          Level Design.
+        </p>
+        <p
+          data-aos="fade-left"
+          data-aos-duration="2800"
+          data-aos-delay="400"
+          data-aos-once="true"
+          style="font-size: 21px; text-align: center;color: #eee; text-shadow:0px 0px 3px #000;"
+        >
+          Environmental Design.
+        </p>
+      </div>
+
+      <div class="scroll-container">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="scroll-text">Scroll down</span>
       </div>
     </div>
 
-    <div class="container-fluid big-logo-row">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 big-logo-container">
-            <span id="h1" class="big-logo"><a style="text-shadow: 0px 0px 4px #222;" href="/">Ron Makhouli</a></span>
-			<span class="hidden-xs hidden-sm" style="font-size: 24px; margin-top: 48px; margin-left: 30px; ">GAME DESIGNER</span>
-            <!---<span class="hidden-xs"><img width="100" height="100" class="pull-right img-responsive" src="magnet.png" alt=""/></span>--->
-          </div><!--/.col-xs-12 -->
-        </div><!--/.row -->
-      </div><!--/.container -->
-    </div><!--/.container-fluid -->
-
-	
-	
-	    <header> 
- 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12" data-aos="fade-left" data-aos-duration="2600" data-aos-once="true" >
-                    <h1>Man vs God</h1>
-                    <p style="color: #eee; text-shadow:0px 0px 3px #000;">One Man, One God, and a Great Battle</p>
-                </div>
-                <div class="col-md-12" data-aos="fade-right" data-aos-duration="2600" data-aos-once="true" ><center>
-                    <a class="btn btn-link" href="/manvsgod.html">
-                        Watch Now
-                    </a>
-                    </center>
-                </div>
-            </div>
+    <div class="container-fluid" style="padding-left:0; padding-right:0;">
+      <div id="projects" style="background-color: #93a8ac;">
+        <div
+          class="col-sm-6 col-lg-4 project project-7 wow animated fadeInLeft"
+        >
+          <div class="project-hover">
+            <h2>MAN VS GOD</h2>
+            <hr />
+            <p>VR, RTS - HTC VIVE</p>
+            <a href="/manvsgod.html">See Project</a>
+          </div>
         </div>
-        
-		</header>
+        <div
+          class="col-sm-6 col-lg-4 project wow animated animated4 fadeInLeft"
+        >
+          <div class="project-hover">
+            <h2>AFTER</h2>
 
+            <hr />
+            <p>Horror - PC</p>
+            <a href="/after.html">See Project</a>
+          </div>
+        </div>
+        <div
+          class="col-sm-6 col-lg-4 project project-2 wow animated animated3 fadeInLeft"
+        >
+          <div class="project-hover">
+            <h2>ZOMBOCALYPSE</h2>
+            <hr />
+            <p>Horror, FPS - PC</p>
+            <a href="/zombocalypse.html">See Project</a>
+          </div>
+        </div>
+        <div
+          class="col-sm-6 col-lg-4 project project-3 wow animated animated2 fadeInLeft"
+        >
+          <div class="project-hover">
+            <h2>LOOK AWAY</h2>
+            <hr />
+            <p>Horror - VR</p>
+            <a href="/look-away.html">See Project</a>
+          </div>
+        </div>
+        <div
+          class="col-sm-6 col-lg-4 project project-4 wow animated fadeInLeft"
+        >
+          <div class="project-hover">
+            <h2>CEMENTED</h2>
+            <hr />
+            <p>Strategy - PC</p>
+            <a href="/cemented.html">See Project</a>
+          </div>
+        </div>
+        <div
+          class="col-sm-6 col-lg-4 project project-5 wow animated fadeInLeft"
+        >
+          <div class="project-hover">
+            <h2>PC CAT</h2>
+            <hr />
+            <p>Simulation - PC</p>
+            <a href="/pc-cat.html">See Project</a>
+          </div>
+        </div>
+        <div
+          class="col-sm-6 col-lg-4 project project-6 wow animated fadeInLeft"
+        >
+          <div class="project-hover">
+            <h2>SURVIVAL NIGHT</h2>
+            <hr />
+            <p>Action, FPS - PC</p>
+            <a href="/survival-night.html">See Project</a>
+          </div>
+        </div>
+      </div>
 
-	  <!--- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">--->
+      <div
+        class="d-none d-md-block hidden-xs"
+        style="background-color: #93a8ac; height: 25vh;"
+      >
+        <div style="padding-top: 10vh;display:table;margin: 0 auto">
+          <ul class="newsocial">
+            <li>
+              <a href="mailto:ronmakhouli@gmail.com"
+                ><i class="fa fa-envelope" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-file" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ronmakhouli/"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+          <p class="text-center" style="font-size: 22px; color:#eee;">
+            Email me at ronmakhouli@gmail.com
+          </p>
+        </div>
+      </div>
 
-<div class="container-fluid" style="margin-bottom: 128px;">
-<div class="title-arch">Hello, I am Ron Makhouli and I am a game designer.
-<p>I graduated from George Mason University with a bachelor’s degree in computer game design.</p>
-<p style="padding-top: 48px;">my portfolio</p>
+      <div
+        class="
+        d-block d-sm-none visible-xs"
+        style="background-color: #93a8ac; height: 25vh;"
+      >
+        <div style="padding-top: 12vh;">
+          <ul class="newsocial">
+            <li>
+              <a href="mailto:ronmakhouli@gmail.com"
+                ><i class="fa fa-envelope" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-file" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ronmakhouli/"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div style="margin-top:32px;">
+          <p class="text-center">&copy; 2019 Ron Makhouli</p>
+          <p class="text-center">
+            <a
+              style="color:#f8ca4d; text-decoration: none;"
+              href="https://www.geneglee.com"
+              >Designed by Gene Lee</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
 
-</div>
-	<div id="projects">
-		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project wow animated animated4 fadeInLeft">
-			<div class="project-hover">
-				<h2>AFTER</h2>
-				
-				<hr />
-				<p>Horror - PC</p>
-				<a href="/after.html">See Project</a>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-2 wow animated animated3 fadeInLeft">
-			<div class="project-hover">
-				<h2>ZOMBOCALYPSE</h2>
-				<hr />
-				<p>Horror, FPS - PC</p>
-				<a href="/zombocalypse.html">See Project</a>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-3 wow animated animated2 fadeInLeft">
-			<div class="project-hover">
-				<h2>LOOK AWAY</h2>
-				<hr />
-				<p>Horror - VR</p>            
-				<a href="/look-away.html">See Project</a>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-4 wow animated fadeInLeft">
-			<div class="project-hover">
-				<h2>CEMENTED</h2>
-				<hr />
-				<p>Strategy - PC</p>            
-				<a href="/cemented.html">See Project</a>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-5 wow animated fadeInLeft">
-			<div class="project-hover">
-				<h2>PC CAT</h2>
-				<hr />
-				<p>Simulation - PC</p>            
-				<a href="/pc-cat.html">See Project</a>
-			</div>
-		</div>
-		<div class="col-sm-6 col-md-4 col-lg-3 col-xl-3 project project-6 wow animated fadeInLeft">
-			<div class="project-hover">
-				<h2>SURVIVAL NIGHT</h2>
-				<hr />
-				<p>Action, FPS - PC</p>            
-				<a href="/survival-night.html">See Project</a>
-			</div>
-		</div>
-		<div class="clearfix"></div>
-	</div>
-</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <!-- Important for animation -->
 
-			
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-			<span id="copy" style="float: left; margin-left: 32px;">&copy; 2017 Ron Makhouli</span>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.10.2.min.js"
+    ></script>
 
-			<div id="footer" class="container" >
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
 
-					<ul class="foot col-xs-12 col-sm-offset-2 col-sm-10 col-md-offset-3 col-md-9 col-lg-offset-6 col-lg-6" style="float: right;">
-						<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-						<li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-					</ul>		
-			</div>
-			<section>
-				<p class="text-center"><a  style="color:#636FA4; text-decoration: none;" href="https://www.geneglee.com">Designed by Gene Lee</a></p>
-			</section>
-    
-	 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script> <!-- Important for animation -->
-
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript">
-var navbarHeight = $('.navbar').height(); 
+      $(document).ready(function() {
+        AOS.init({ disable: "mobile" });
+      });
 
-$(window).scroll(function() {
-  var navbarColor="142,158,171";
-
-
-  var smallLogoHeight = $('.small-logo').height();
-  var bigLogoHeight = $('.big-logo').height();
-  
-  
-  var smallLogoEndPos = 0;
-  var smallSpeed = (smallLogoHeight / bigLogoHeight);
-  
-  var ySmall = ($(window).scrollTop() * smallSpeed); 
-  
-  var smallPadding = navbarHeight - ySmall;
-  if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
-  if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
-  if (smallPadding < 0) { smallPadding = 0; }
-  
-  $('.small-logo-container ').css({ "padding-top": smallPadding});
-  
-  var navOpacity = ySmall / smallLogoHeight; 
-  if  (navOpacity > 1) { navOpacity = 1; }
-  if (navOpacity < 0 ) { navOpacity = 0; }
-  var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
-  $('.navbar').css({"background-color": navBackColor});
-  
-  var shadowOpacity = navOpacity * 0.4;
-  if ( ySmall > 1) {
-    $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
-  } else {
-    $('.navbar').css({"box-shadow": "none"});
-  }
-  
-  
-  
-});
-
-
-
-$(document).ready(function(){
-
-	if ($(window).width() == 1440) {
-	    $("#projects").addClass("col-md-offset-2");
-	}
-
-	if ($(window).width() >1440) {
-	    $("#projects").addClass("col-md-offset-1");
-	}
-	
-	if ($(window).width() >= 2560) {
-	    $(".big-logo").css("margin-left", "-450px");
-		$(".navbar-right").css("margin-right", "-450px");
-	}
-
-	AOS.init({ disable: 'mobile' });
-});
-
-/* For mobile support, delet the 'mobile' */
-
-
-
-
-</script>
-</body>
-
-
+      /* For mobile support, delet the 'mobile' */
+    </script>
+  </body>
 </html>

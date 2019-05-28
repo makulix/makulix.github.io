@@ -1,337 +1,326 @@
 <html>
-<head>	
-		<meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Man Vs God | Ron Makhouli</title>
-        <link href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Marcellus+SC" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-		<link rel="stylesheet" href="social.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Man Vs God | Ron Makhouli</title>
 
-		<style>/*
-					   Variables
-			  ********************************** */
-			/* *********************************
-			   Some Style Overrides on Bootstrap
-			  ********************************** */
-			 
-			.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus {
-				color: #fff;
-				background-color: rgba(248, 202, 77, 0.7);
-				
-			}
-			
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cinzel:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Marcellus+SC"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway"
+      rel="stylesheet"
+    />
 
-			.navbar-inverse {
-			  /*background: rgba(62, 195, 246, 0);*/
-			  background: rgba(230,92,0,0);
-			  border-bottom: none;
-			  border-color: transparent;
-			}
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 
-			.navbar-inverse .navbar-toggle {
-			  border: 1px solid #333;
-			  /*border-color: rgba(255, 255, 255, 0.7);*/
-			}
+    <link rel="stylesheet" href="portfolio.css" />
+  </head>
 
-			.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-			  border-color: transparent;
-			}
-			@media (max-width: 767px) {
-			  .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-				background: rgba(255, 255, 255, 0.75);
-			  }
-			}
+  <body>
+    <div class="navbar d-none d-lg-block">
+      <a href="/"><i class="fa fa-2x fa-home" aria-hidden="true"></i></a>
+    </div>
 
-			.navbar-inverse .navbar-nav > li > a {
-			  color: black;
-			}
+    <div class="nav d-lg-none">
+      <div class="toggle-btn">
+        <span class="one"></span>
+        <span class="two"></span>
+      </div>
 
-			.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-			  color: #22F;
-			}
-			li a {
-			  font-size: 20px;
-			  #font-family: 'Shadows Into Light', cursive;
-			  font-family: 'Raleway', sans-serif;
-			  text-decoration: none;
-			  position: relative;
-			  padding: 6px 0;
-			  -webkit-transition: all 0.8s;
-			  transition: all 0.8s;
-			  color: lightblue;
-			}
-			li a:after {
-			  content: '';
-			  width: 0%;
-			  margin-left: 50%;
-			  height: 2px;
-			  bottom: 0;
-			  left: 0;
-			  border-radius: 40%;
-			  position: absolute;
-			  transition: all 0.5s;
-			}
-			li a:hover:after {
-			  background-color: white;
-			  width: 60%;
-			  margin-left: 20%;
-			  box-shadow: 0px 0px 10px white;
-			}
-			li a.active:after {
-			  background-color: white;
-			  width: 60%;
-			  margin-left: 20%;
-			  box-shadow: 0px 0px 10px white;
-			}
-
-			/* *********************************
-					   Toolbar Logo
-			  ********************************** */
-			.small-logo-container {
-			  padding-top: 50px;
-			 padding-left: 10px;
-			  height: 50px;
-			  overflow: hidden;
-			  position: absolute;
-			}
-
-			.small-logo {
-			font-family: 'Marcellus SC', serif;
-			  color: white !important;
-			  /*font-size: 2.5em;*/
-			  font-size: 34px;
-			  padding-bottom: 2px;
-			}
-			
-
-			/* *********************************
-					   Big Logo
-			  ********************************** */
-
-			.big-logo-row{
-			
-			  background: #8e9eab; /* For browsers that do not support gradients */
-			  background: -webkit-linear-gradient(left top, #8e9eab, #eef2f3); /* For Safari 5.1 to 6.0 */
-			  background: -o-linear-gradient(bottom right, #8e9eab, #eef2f3); /* For Opera 11.1 to 12.0 */
-			  background: -moz-linear-gradient(bottom right, #8e9eab, #eef2f3); /* For Firefox 3.6 to 15 */
-			  background: linear-gradient(to bottom right, #8e9eab, #eef2f3); /* Standard syntax */
-			}
-			
-			.big-logo-row .big-logo-container {
-			  padding-top: 50px;
-			  padding-bottom: 25px;
-			}
-			.big-logo-row #h1 {
-			  font-size: 4em;
-			  color: rgb(248, 202, 77);
-			  margin: 0;
-			  padding: 0 0 15px 0;
-			  font-family: 'Marcellus SC', serif;
-
-			}
-			
-			@media (min-width: 375px) {
-				.tz-gallery {
-						padding: 2px;
-					}	
-					
-
-			}
-
-			
-			@media (min-width: 400px) {
-			  .big-logo-row #h1 {
-				font-size: 4.5em;
-			  }
-			  
-			  
-			}
-			@media (min-width: 440px) {
-			  .big-logo-row #h1 {
-				font-size: 5.5em;
-			  }
-			}
-			@media (min-width: 500px) {
-			  .big-logo-row #h1 {
-				font-size: 6.5em;
-			  }
-			}
-			@media (min-width: 630px) {
-			  .big-logo-row #h1 {
-				font-size: 7.5em;
-			  }
-			}
-			@media (min-width: 768px) {
-			  .big-logo-row #h1 {
-				font-size: 9em;
-				padding-bottom: 30px;
-				margin-left: 20px;
-			  }
-			  
-				.tz-gallery {
-						padding: 10px;
-					}	
-
-			}
-			@media (min-width: 1200px) {
-			  .big-logo-row #h1 {
-				font-size: 6em;
-				margin-left: -150px;
-			  }
-			  .small-logo-container{
-				margin-left: -150px;
-			  }
-			  
-			  
-			}
-				img{
-			margin-top: 10px;
-			}		
-
-body
-{
-    font-family: 'Raleway', sans-serif;
-}
-		</style>   
-
-</head>
-
-<body id="grad">
-	   <!-- Fixed navbar -->
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <div class="small-logo-container">
-            <a class="small-logo" href="/">Ron Makhouli</a>
-          </div>
-        </div>
-        <div class="navbar-collapse collapse">
-          
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="/">portfolio</a></li>
-            <li><a href="/contact.html">contact me</a></li>
+      <div class="menu">
+        <div class="data">
+          <ul class="mobile-menu">
+            <li><a href="/">Home</a></li>
+            <li class="mobile-menu-gray">Portfolio</li>
+            <li><a href="/manvsgod.html">Man vs God</a></li>
+            <li><a href="/after.html">After</a></li>
+            <li><a href="/zombocalypse.html">Zombocalypse</a></li>
+            <li><a href="/look-away.html">Look Away</a></li>
+            <li><a href="/cemented.html">Cemented</a></li>
+            <li><a href="/pc-cat.html">PC Cat</a></li>
+            <li><a href="/survival-night.html">Survival Night</a></li>
           </ul>
-        </div><!--/.nav-collapse -->
+        </div>
       </div>
     </div>
 
-    <div class="container-fluid big-logo-row">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 big-logo-container">
-            <span id="h1" class="big-logo"><a style="text-shadow: 0px 0px 4px #222;" href="/">Ron Makhouli</a></span>
-			<span class="hidden-xs hidden-sm" style="font-size: 24px; margin-top: 48px; margin-left: 30px; ">GAME DESIGNER</span>
-            <!---<span class="hidden-xs"><img width="100" height="100" class="pull-right img-responsive" src="magnet.png" alt=""/></span>--->
-          </div><!--/.col-xs-12 -->
-        </div><!--/.row -->
-      </div><!--/.container -->
-    </div><!--/.container-fluid -->
+    <div class="hidden-xs video-container">
+      <img
+        id="myVideo"
+        src="/images/mvg-cover2.png"
+        style="width: 100%; opacity: 0.6;"
+      />
+      <div class="main-overlay">
+        <h1
+          class="main-overlay-h1"
+          data-aos="fade-left"
+          data-aos-duration="2600"
+          data-aos-once="true"
+        >
+          Man Vs God
+        </h1>
+        <p
+          class="main-overlay-p"
+          data-aos="fade-left"
+          data-aos-duration="2800"
+          data-aos-delay="200"
+          data-aos-once="true"
+        >
+          VR and RTS hybrid
+        </p>
+        <p
+          class="main-overlay-p"
+          data-aos="fade-left"
+          data-aos-duration="2800"
+          data-aos-delay="300"
+          data-aos-once="true"
+        >
+          Programming, Level Design, and Game Design
+        </p>
+      </div>
+
+      <div class="scroll-container">
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <div class="chevron"></div>
+        <span class="scroll-text">Scroll down</span>
+      </div>
+    </div>
 
     <div class="container">
-      <div class="row">
-		<br/>
-		<h1 class="text-center">Man Vs God</h1>
-          <p style="font-size:20px">Man Vs God is a VR and RTS hybrid game. This is a two player game that requires one player on PC and the other on HTC VIVE.
- This is a game about a god and a man who are in a constant battle against each other. </p>
- <p style="font-size:20px">The god sends his animals and causes natural disaster in order to destroy the man's town, while the man defends his town's gate by killing animals and counter attacking natural disasters.</p>
-		  
-		  <p style="font-size: 18px;"><i>Engine: Unity</i></p>
-		  <p style="font-size: 18px;"><i>Year: 2018</i></p>
-		  <p style="font-size: 18px;"><i>Role: Programming, Level Design, and Game Design</i></p>
-		  <p style="font-size: 18px;"><i>Team: 3</i></p>
-		  
-		  <div class="video-container">
-<iframe class="center-block" width="560" height="315" src="https://www.youtube.com/embed/irOgwFXNI68?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-		  </div>
-		  
-		  <img class="center-block img-responsive" src="/images/manvsgod/mvg-1.png" alt="The God's View" />
-		  
-		  <img class="center-block img-responsive" src="/images/manvsgod/mvg-2.png" alt="The Battle" />
-		  
-		  <img class="center-block img-responsive" src="/images/manvsgod/mvg-3.png" alt="The Man's View" />
-      </div><!--/.row -->
-    </div><!--/.container -->
-	    <div class="clearfix"></div>
+      <div class="row" style="margin: 48px;">
+        <div class="col-md-12">
+          <h2 class="section-heading">
+            Man Vs God
+          </h2>
+        </div>
+        <div class="col-md-5">
+          <ul class="ul-roles">
+            <li>Engine: Unity</li>
+            <li>Year: 2018</li>
+            <li>Role: Programming, Level Design, and Game Design</li>
+            <li>Team: 3</li>
+          </ul>
+        </div>
+        <div class="col-md-7">
+          <p class="section-text">
+            Man Vs God is a VR and RTS hybrid game. This is a two player game
+            that requires one player on PC and the other on HTC VIVE. This is a
+            game about a god and a man who are in a constant battle against each
+            other.
+          </p>
+          <p class="section-text">
+            The god sends his animals and causes natural disaster in order to
+            destroy the man's town, while the man defends his town's gate by
+            killing animals and counter attacking natural disasters.
+          </p>
+        </div>
+      </div>
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-			<span id="copy" style="float: left; margin-left: 32px;">&copy; 2017 Ron Makhouli</span>
+      <div class="iframe-container" style="margin: 48px 0;">
+        <iframe
+          class="center-block"
+          height="433"
+          width="770"
+          src="https://www.youtube.com/embed/irOgwFXNI68?rel=0"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+    <!--/.container -->
 
-			<section>
-				<p class="text-center"><a  style="color:#636FA4; text-decoration: none;" href="https://www.geneglee.com">Designed by Gene Lee</a></p>
-			</section>
-    
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script type="text/javascript" src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-var navbarHeight = $('.navbar').height(); 
+    <div class="container-fluid" style="padding-left:0; padding-right:0;">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css"
+      />
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div
+              class="slide-inner"
+              style="background-image:url(/images/manvsgod/mvg-1.png)"
+              alt="The God's View"
+            ></div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="slide-inner"
+              style="background-image:url(/images/manvsgod/mvg-2.png)"
+              alt="The Battle"
+            ></div>
+          </div>
+          <div class="swiper-slide">
+            <div
+              class="slide-inner"
+              style="background-image:url(/images/manvsgod/mvg-3.png)"
+              alt="The Man's View"
+            ></div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+    </div>
 
-$(window).scroll(function() {
-  var navbarColor="142,158,171";
+    <div
+      class="container-fluid d-none d-lg-block"
+      style="padding-left:0; padding-right: 0;"
+    >
+      <h2 class="section-heading" style="margin-top:32px;">
+        View More Projects
+      </h2>
+      <div align="center" style="margin-bottom: 32px;">
+        <div>
+          <div class="port-container">
+            <img src="/images/portfolio-after.png" alt="img" class="image" />
+            <div class="port-overlay port-overlayFade">
+              <a class="text" href="/after.html">After</a>
+            </div>
+          </div>
+          <div class="port-container">
+            <img src="/images/portfolio-zomb.png" alt="img" class="image" />
+            <div class="port-overlay port-overlayFade">
+              <a class="text" href="/zombocalypse.html">Zombocalypse</a>
+            </div>
+          </div>
+          <div class="port-container">
+            <img src="/images/lookaway.png" alt="img" class="image" />
+            <div class="port-overlay port-overlayFade">
+              <a class="text" href="/look-away.html">Look Away</a>
+            </div>
+          </div>
+          <div class="port-container">
+            <img src="/images/portfolio-cemented.png" alt="img" class="image" />
+            <div class="port-overlay port-overlayFade">
+              <a class="text" href="/cemented.html">Cemented</a>
+            </div>
+          </div>
+          <div class="port-container">
+            <img src="/images/portfolio-pc-cat.png" alt="img" class="image" />
+            <div class="port-overlay port-overlayFade">
+              <a class="text" href="/pc-cat.html">PC Cat</a>
+            </div>
+          </div>
+          <div class="port-container">
+            <img
+              src="/images/portfolio-survival-night.png"
+              alt="img"
+              class="image"
+            />
+            <div class="port-overlay port-overlayFade">
+              <a class="text" href="/survival-night.html">Survival Night</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
+    <div class="container-fluid" style="padding-left:0; padding-right:0;">
+      <div
+        class="d-none d-md-block hidden-xs"
+        style="background-color: #93a8ac; height: 25vh;"
+      >
+        <div style="padding-top: 10vh;display:table;margin: 0 auto">
+          <ul class="newsocial">
+            <li>
+              <a href="mailto:ronmakhouli@gmail.com"
+                ><i class="fa fa-envelope" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-file" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ronmakhouli/"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-  var smallLogoHeight = $('.small-logo').height();
-  var bigLogoHeight = $('.big-logo').height();
-  
-  
-  var smallLogoEndPos = 0;
-  var smallSpeed = (smallLogoHeight / bigLogoHeight);
-  
-  var ySmall = ($(window).scrollTop() * smallSpeed); 
-  
-  var smallPadding = navbarHeight - ySmall;
-  if (smallPadding > navbarHeight) { smallPadding = navbarHeight; }
-  if (smallPadding < smallLogoEndPos) { smallPadding = smallLogoEndPos; }
-  if (smallPadding < 0) { smallPadding = 0; }
-  
-  $('.small-logo-container ').css({ "padding-top": smallPadding});
-  
-  var navOpacity = ySmall / smallLogoHeight; 
-  if  (navOpacity > 1) { navOpacity = 1; }
-  if (navOpacity < 0 ) { navOpacity = 0; }
-  var navBackColor = 'rgba(' + navbarColor + ',' + navOpacity + ')';
-  $('.navbar').css({"background-color": navBackColor});
-  
-  var shadowOpacity = navOpacity * 0.4;
-  if ( ySmall > 1) {
-    $('.navbar').css({"box-shadow": "0 2px 3px rgba(0,0,0," + shadowOpacity + ")"});
-  } else {
-    $('.navbar').css({"box-shadow": "none"});
-  }
-  
-  
-  
-});
+      <div
+        class="
+        d-block d-sm-none visible-xs"
+        style="background-color: #93a8ac; height: 25vh;"
+      >
+        <div style="padding-top: 12vh;">
+          <ul class="newsocial">
+            <li>
+              <a href="mailto:ronmakhouli@gmail.com"
+                ><i class="fa fa-envelope" aria-hidden="true"></i
+              ></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-file" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/ronmakhouli/"
+                ><i class="fa fa-linkedin" aria-hidden="true"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div style="margin-top:32px;">
+          <p class="text-center">&copy; 2019 Ron Makhouli</p>
+          <p class="text-center">
+            <a
+              style="color:#f8ca4d; text-decoration: none;"
+              href="https://www.geneglee.com"
+              >Designed by Gene Lee</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
 
-
-
-$(document).ready(function(){
-	if ($(window).width() >= 2560) {
-		$(".big-logo").css("margin-left", "-450px");
-		$(".navbar-right").css("margin-right", "-450px");
-	}
-
-	AOS.init({ disable: 'mobile' });
-	
-
-});
-
-/* For mobile support, delet the 'mobile' */
-
-
-
-
-</script>
-</body>
-
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <!-- Important for animation -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.10.2.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js"></script>
+    <script src="portfolio.js"></script>
+  </body>
 </html>
